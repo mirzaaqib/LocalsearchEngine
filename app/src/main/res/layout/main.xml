@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    android:orientation="vertical"
+    android:gravity="center_vertical" >
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:background="@drawable/lgss"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Search will end here!!"
+        android:textSize="20dp"
+        android:textColor="#1B5E20"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/buttonSignIN"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="#2E7D32"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="120dp"
+         android:text="Sign In" 
+         android:onClick="signIn"/>
+
+    <Button
+        android:id="@+id/buttonSignUP"
+        android:layout_width="350dp"
+        android:background="#2E7D32"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up" />
+
+</LinearLayout>

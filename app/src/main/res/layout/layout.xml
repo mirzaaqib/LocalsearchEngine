@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:padding="8dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:showIn="@layout/activity_main"
+            android:background="#ECEFF1"
+            >
+            `<LinearLayout
+            android:id="@+id/linearGrid"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+                <RelativeLayout
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:onClick="openElectricianActivity"
+                        android:layout_width="153dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="7dp"
+                        android:id="@+id/Buttonmechanic"
+                        android:background="@drawable/electrician"
+                        />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:onClick="openLAUNDRY"
+                        android:layout_width="144dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_height="140dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/Buttonmedcare"
+                        android:background="@drawable/laundry"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true" /><![CDATA[
+                        />
+
+                    ]]>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <RelativeLayout
+                    android:onClick="openRestaurantBAr"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:onClick="openFlowers"
+                        android:layout_marginTop="40dp"
+                        android:layout_width="172dp"
+                        android:layout_height="145dp"
+                        android:id="@+id/Buttonchill"
+                        android:background="@drawable/ssflowers"
+                        android:layout_centerHorizontal="true" />
+                    <TextView
+                        android:onClick="openRestaurantBAr"
+                        android:gravity="center"
+                        android:text="Flowers"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="-29dp"
+                        android:paddingBottom="8dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:layout_alignBottom="@+id/Buttonchill"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="Electrician"
+                        android:layout_width="match_parent"
+                        android:paddingTop="1dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="-14dp"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:onClick="openTraining"
+                        android:layout_marginTop="52dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="150dp"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="136dp"
+                        android:id="@+id/Buttonservice"
+                        android:background="@drawable/trr"
+                        />
+                    <TextView
+                        android:gravity="center"
+                        android:paddingTop="180dp"
+                        android:text="Training Center"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:id="@+id/textView4"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="Laundry"
+                        android:layout_width="match_parent"
+                        android:paddingTop="9dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="-8dp"
+                        android:textColor="#000000"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/textView4" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <ImageView
+                android:onClick="openBanner"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="-15dp"
+                android:id="@+id/imageView"
+                android:layout_below="@+id/linearGrid"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/women"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+
+                />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
